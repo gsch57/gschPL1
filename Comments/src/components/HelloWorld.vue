@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div>
     <b-navbar toggleable="md" type="light" variant="light">
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
@@ -111,10 +112,15 @@
       </b-tab>
     </b-tabs>
     <EditModal ref="editModal" @update="getComment"></EditModal>
+=======
+  <div class="hello">
+    <h1>{{ msg }}</h1>
+>>>>>>> c46bb9058d0a0ca52633b8f55b8f015a43cf6ae8
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 
 import EditModal from './EditModal.vue'
 import PostsService from '@/services/PostsService'
@@ -207,6 +213,14 @@ export default {
       this.totalRows = filteredItems.length
       this.currentPage = 1
     },
+=======
+export default {
+  name: 'HelloWorld',
+  data () {
+    return {
+      msg: 'HelloWorld'
+    }
+>>>>>>> c46bb9058d0a0ca52633b8f55b8f015a43cf6ae8
   }
 }
 </script>
